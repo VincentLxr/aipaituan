@@ -1,0 +1,38 @@
+<view class="apt">
+	<!-- 首页搜索开始 -->
+	<view class="input">
+		<navigator>
+			搜索
+		</navigator>
+	</view>
+	<!-- 轮播图开始 -->
+	<view class="swiper">
+		<swiper indicator-dots="true" autoplay="true" interval="2000">
+			<swiper-item wx:for="{{swiper_list}}" wx:key="image_src">
+				<image src="{{item.image_src}}"></image>
+			</swiper-item>
+		</swiper>
+	</view>
+	<!-- 图片导航开始 -->
+	<view class="navigation">
+		<navigator wx:for="{{catItems}}" wx:key="image_src">
+			<image src="{{item.image_src}}"></image>
+		</navigator>
+	</view>
+	<!-- 图片列表开始 -->
+	<view class="floor">
+		<view wx:for="{{floorData}}" wx:key="*this" class="floorList">
+			<!-- 图片标题开始 -->
+			<view class="floor-title">
+				{{item.floor_title.name}}
+			</view>
+			<!-- 列表开始 -->
+			<view class="wrapper">
+				<navigator wx:for="{{item.product_list}}" wx:key="image_src" wx:for-item="v" wx:for-index="i">
+					<image src="{{v.image_src}}" />
+				</navigator>
+			</view>
+		</view>
+	</view>
+	<!-- 图片列表结束 -->
+</view>

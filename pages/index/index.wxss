@@ -1,0 +1,54 @@
+.apt .input {
+  height: 100rpx;
+  width: 100%;
+  background-color: #f63857;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apt .input navigator {
+  border-radius: 5rpx;
+  color: #767676;
+  height: 80rpx;
+  width: 90%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apt .swiper swiper {
+  height: 420rpx;
+}
+.apt .swiper swiper image {
+  height: 350rpx;
+}
+.apt .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apt .navigation navigator {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apt .navigation navigator image {
+  height: 140rpx;
+  width: 128rpx;
+}
+.apt .floor .floorList .floor-title {
+  color: pink;
+  margin: 10rpx;
+}
+.apt .floor .floorList .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.apt .floor .floorList .wrapper navigator {
+  padding-left: 10rpx;
+  width: 33.33%;
+}
+.apt .floor .floorList .wrapper navigator image {
+  height: 188rpx;
+}

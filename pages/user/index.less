@@ -1,0 +1,106 @@
+.container {
+    height          : 100%;
+    background-color: rgb(241, 237, 237);
+
+    .userinfo {
+        height          : 350rpx;
+        width           : 100%;
+        background-color: #ffffff;
+        position        : relative;
+
+        button {
+            position        : absolute;
+            top             : 20%;
+            left            : 50%;
+            transform       : translateX(-50%);
+            color           : red;
+            border          : 1px solid red;
+            background-color: white;
+        }
+
+        .profile {
+            height: 350rpx;
+            filter: blur(10rpx);
+        }
+
+        .userinfo-avatar {
+            position     : absolute;
+            top          : 20%;
+            left         : 50%;
+            transform    : translateX(-50%);
+            border-radius: 50%;
+            height       : 170rpx;
+            width        : 170rpx;
+        }
+
+        .userinfo-nickname {
+            color    : white;
+            position : absolute;
+            top      : 250rpx;
+            left     : 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+
+    .user-order {
+        height          : 150rpx;
+        margin          : 20rpx 5rpx;
+        background-color: white;
+        display         : flex;
+        align-items     : center;
+
+        .item {
+            flex          : 1;
+            display       : flex;
+            flex-direction: column;
+            align-items   : center;
+
+            .iconfont.icon-icon-test {
+                font-size: 60rpx;
+            }
+
+            .text {
+                font-size: 30rpx;
+                color    : rgb(109, 109, 109);
+            }
+        }
+    }
+
+    .user-sysFunc {
+        height    : 100%;
+        background: #ffffff;
+        margin    : 0 5rpx;
+
+        .sysFunc-item {
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+            padding        : 20rpx;
+            height         : 100rpx;
+            border-bottom  : 2px solid #ddd;
+            margin         : 0rpx 10rpx;
+
+            .left {
+                display    : flex;
+                align-items: center;
+
+
+                .iconfont {
+                    font-size: 50rpx;
+                    margin   : 0 20rpx;
+                    color    : rgb(109, 109, 109);
+                }
+
+                .text {
+                    font-size: 30rpx;
+                    color    : rgb(109, 109, 109);
+                }
+            }
+
+            .right {
+                color: rgb(109, 109, 109);
+            }
+        }
+    }
+}
